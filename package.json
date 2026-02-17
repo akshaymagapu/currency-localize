@@ -1,6 +1,6 @@
 {
   "name": "currency-localize",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fowler-style Money value object for JS with country->currency resolution and locale-safe formatting.",
   "repository": {
     "type": "git",
