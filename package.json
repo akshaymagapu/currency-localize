@@ -2,6 +2,14 @@
   "name": "currency-localize",
   "version": "0.1.0",
   "description": "Fowler-style Money value object for JS with country->currency resolution and locale-safe formatting.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akshaymagapu/currency-localize"
+  },
+  "homepage": "https://github.com/akshaymagapu/currency-localize#readme",
+  "bugs": {
+    "url": "https://github.com/akshaymagapu/currency-localize/issues"
+  },
   "type": "module",
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
