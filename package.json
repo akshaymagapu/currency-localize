@@ -1,0 +1,42 @@
+{
+  "name": "currency-localize",
+  "version": "0.1.0",
+  "description": "Fowler-style Money value object for JS with country->currency resolution and locale-safe formatting.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "lint": "node --check src/*.js test/*.js scripts/*.mjs",
+    "ci": "npm run lint && npm test",
+    "release:publish-if-needed": "node scripts/publish-if-needed.mjs"
+  },
+  "keywords": [
+    "money",
+    "currency",
+    "intl",
+    "format",
+    "country",
+    "value-object"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "big.js": "^7.0.1",
+    "country-to-currency": "^2.0.2"
+  },
+  "devDependencies": {
+    "fast-check": "^4.2.0"
+  }
+}

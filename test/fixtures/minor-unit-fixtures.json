@@ -1,0 +1,11 @@
+[
+  { "currency": "USD", "minorUnit": 2 },
+  { "currency": "EUR", "minorUnit": 2 },
+  { "currency": "JPY", "minorUnit": 0 },
+  { "currency": "KRW", "minorUnit": 0 },
+  { "currency": "INR", "minorUnit": 2 },
+  { "currency": "KWD", "minorUnit": 3 },
+  { "currency": "BHD", "minorUnit": 3 },
+  { "currency": "CLP", "minorUnit": 0 },
+  { "currency": "TND", "minorUnit": 3 }
+]

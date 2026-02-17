@@ -1,0 +1,30 @@
+[
+  {
+    "currency": "USD",
+    "minor": "123450",
+    "scale": 2,
+    "locale": "en-US",
+    "expected": "$1,234.50"
+  },
+  {
+    "currency": "INR",
+    "minor": "123456789",
+    "scale": 2,
+    "locale": "en-IN",
+    "expected": "₹12,34,567.89"
+  },
+  {
+    "currency": "EUR",
+    "minor": "123450",
+    "scale": 2,
+    "locale": "de-DE",
+    "expected": "1.234,50 €"
+  },
+  {
+    "currency": "JPY",
+    "minor": "1234",
+    "scale": 0,
+    "locale": "ja-JP",
+    "expected": "￥1,234"
+  }
+]
