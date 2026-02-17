@@ -1,8 +1,8 @@
 name: Publish to npm
 
 on:
-  release:
-    types: [published]
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -11,6 +11,9 @@ permissions:
 
 jobs:
   publish:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      startsWith(github.event.head_commit.message, 'chore(main): release ')
     runs-on: ubuntu-latest
     environment: CI
     steps:
