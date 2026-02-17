@@ -1,4 +1,4 @@
-# Contributing to currency-formatter
+# Contributing to currency-localize
 
 Thanks for contributing.
 
@@ -7,7 +7,7 @@ Thanks for contributing.
 - Keep changes small and focused.
 - Write tests for behavior changes.
 - Avoid breaking public APIs without prior discussion.
-- Use clear commit messages.
+- Use Conventional Commits.
 
 ## Development Setup
 
@@ -24,6 +24,20 @@ npm run lint
 3. Add tests and docs with code changes.
 4. Ensure CI is green.
 5. Request review.
+
+## Commit Message Rule
+
+All commits on this repository should follow the Conventional Commits format:
+
+```text
+type(scope): short summary
+```
+
+Examples:
+- `fix(parse): validate strict locale grouping`
+- `feat(api): add deterministic trace metadata`
+- `docs(readme): clarify strictParse behavior`
+- `chore(ci): update actions/setup-node version`
 
 ## Coding Guidelines
 
