@@ -95,6 +95,25 @@ test("strict parse rejects currency symbols", () => {
   }));
 });
 
+test("strict parse rejects malformed en-US grouping", () => {
+  const kit = createCurrencyFormatter();
+  assert.throws(() => kit.parseMoney("12,34.56", {
+    locale: "en-US",
+    currency: "USD",
+    strictParse: true
+  }));
+});
+
+test("strict parse accepts valid en-IN grouping", () => {
+  const kit = createCurrencyFormatter();
+  const out = kit.parseMoney("12,34,567.89", {
+    locale: "en-IN",
+    currency: "INR",
+    strictParse: true
+  });
+  assert.equal(out.toDecimalString(), "1234567.89");
+});
+
 test("allocation rejects non-positive ratios", () => {
   const total = Money.fromMajor("10.00", { currency: "USD" });
   assert.throws(() => total.allocate([1, 0, 1]));
